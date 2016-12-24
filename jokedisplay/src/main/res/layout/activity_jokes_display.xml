@@ -16,7 +16,7 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:paddingTop="@dimen/activity_vertical_margin"
-        android:textSize="16sp"
-        android:text="Joke Show here" />
+        android:textSize="@dimen/joke_text_size"
+        android:text="@string/joke" />
 
 </RelativeLayout>
