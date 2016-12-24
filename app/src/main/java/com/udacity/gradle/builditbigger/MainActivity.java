@@ -2,7 +2,6 @@ package com.udacity.gradle.builditbigger;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,7 +10,7 @@ import android.view.View;
 import eman.example.com.jokedisplay.JokesDisplay;
 
 
-public class MainActivity extends ActionBarActivity  implements EndpointsAsyncTask.AsyncFinish{
+public class MainActivity extends AppCompatActivity  implements EndpointsAsyncTask.AsyncFinish{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +40,9 @@ public class MainActivity extends ActionBarActivity  implements EndpointsAsyncTa
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view) {
-        new EndpointsAsyncTask(MainActivity.this).execute();
-    }
+//    public void tellJoke(View view) {
+//        new EndpointsAsyncTask(MainActivity.this).execute();
+//    }
 
     @Override
     public void processFinish(String output) {

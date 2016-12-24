@@ -1,7 +1,5 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -12,8 +10,6 @@ import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 
 import java.io.IOException;
-
-import eman.example.com.jokedisplay.JokesDisplay;
 
 /**
  * Created by Eman on 12/21/2016.
@@ -38,7 +34,7 @@ public  class EndpointsAsyncTask extends AsyncTask<Void, Void, String> {
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
                     new AndroidJsonFactory(), null)
                     .setRootUrl("http://192.168.1.129:8080/_ah/api/")//home
-//                    .setRootUrl("http://192.168.1.129:8080/_ah/api/")//virtual device
+//                    .setRootUrl("http://10.0.2.2:8080/_ah/api/")//virtual device
  //                   .setRootUrl("http://192.168.1.112:8080/_ah/api/")//work
                     .setGoogleClientRequestInitializer(new GoogleClientRequestInitializer() {
                         @Override
