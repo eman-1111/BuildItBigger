@@ -4,10 +4,9 @@ Used Gradle to build a joke-telling app that has both a free and paid version. T
 
 #Whats in it:
 
-
-*Automated unit testing
-*Gradle tasks
-*Dependency management
-*Build variants
+* Automated unit testing
+* Gradle tasks
+* Dependency management
+* Build variants
 
 nanodegree iconPart of the Android Developer Nanodegree Program
